@@ -15,25 +15,6 @@ Description: "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durc
 * type = false
 * instance = false
 
-* parameter[0]
-  * name = #target
-  * use = #in
-  * min = 1
-  * max = "1"
-  * documentation = "Angabe der Domäne innerhalb derer die angegebenen Originalwerte gelöscht werden."
-  * type = #string
-  * searchType = #string
-* parameter[+]
-  * name = #original
-  * use = #in
-  * min = 1
-  * max = "*"
-  * documentation = "Angabe der Originalwerte für die in der angegebenen Domäne eine Löschung durchgeführt werden soll."
-  * type = #string
-  * searchType = #string
-
-
-
 * parameter[+]
   * name = #original
   * use = #in
