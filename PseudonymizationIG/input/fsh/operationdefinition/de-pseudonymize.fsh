@@ -3,7 +3,7 @@ InstanceOf: OperationDefinition
 Description: "Returns the original value for a given pseudonym."
 Usage: #definition
 * name = "De-Pseudonymize"
-* title = "De-Pseudonymize a given pseudonym."
+* title = "de-pseudonymize"
 * status = #active
 * kind = #operation
 * experimental = false

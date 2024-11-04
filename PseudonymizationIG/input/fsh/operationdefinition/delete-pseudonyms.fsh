@@ -1,16 +1,16 @@
 Instance: DeletePseudonyms
 InstanceOf: OperationDefinition
 Usage: #definition
-Description: "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."
+Description: "Deletes a given list of 1-n entries (identified by the original value) in the specified domain, if the configuration of this domain allows this."
 * name = "Delete-Pseudonyms"
 * title = "delete-pseudonyms"
 * publisher = "Medizininformatik Inititative"
 * kind = #operation
-* comment = "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."
+* description = "Deletes a given list of 1-n entries (identified by the original value) in the specified domain, if the configuration of this domain allows this."
 * affectsState = true
 * status = #active
 * code = #delete-pseudonyms
-* comment = "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."
+* comment = "Deletes a given list of 1-n entries (identified by the original value) in the specified domain, if the configuration of this domain allows this."
 * system = true
 * type = false
 * instance = false
@@ -79,6 +79,7 @@ Description: "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durc
 
 Instance: Parameters-DeletePseudonyms-request-example-1
 InstanceOf: Parameters
+Description: "An example of a $delete-pseudonyms request using two original values of type string"
 Usage: #example
 * parameter[+].name = "original"
 * parameter[=].part[0].name = "target"
@@ -94,6 +95,7 @@ Usage: #example
 
 Instance: Parameters-DeletePseudonyms-response-example-1
 InstanceOf: Parameters
+Description: "An example of a $delete-pseudonyms request response"
 Usage: #example
 * parameter[+].name = "successStatus"
 * parameter[=].part[0].name = "target"

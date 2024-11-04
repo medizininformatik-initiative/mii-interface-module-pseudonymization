@@ -3,7 +3,7 @@ InstanceOf: OperationDefinition
 Description: "Generates a pseudonym for the given original value."
 Usage: #definition
 * name = "Pseudonymize"
-* title = "Pseudonymize a given value."
+* title = "pseudonymize"
 * status = #active
 * kind = #operation
 * experimental = false

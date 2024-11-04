@@ -1,16 +1,16 @@
 Instance: PseudonymizeSecondary
 InstanceOf: OperationDefinition
 Usage: #definition
-Description: "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert."
+Description: "Generation of a specific number of pseudonyms in an existing pseudonymisation context with simultaneous assignment to the given original value."
 * name = "Pseudonymize-Secondary"
 * title = "pseudonymize-secondary"
 * publisher = "Medizininformatik Inititative"
 * kind = #operation
-* description = "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert."
+* description = "Generation of a specific number of pseudonyms in an existing pseudonymisation context with simultaneous assignment to the given original value."
 * affectsState = false
 * status = #active
 * code = #pseudonymize-secondary
-* comment = "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert."
+* comment = "Generation of a specific number of pseudonyms in an existing pseudonymisation context with simultaneous assignment to the given original value."
 * system = true
 * type = false
 * instance = false
@@ -73,6 +73,7 @@ Description: "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorha
 
 Instance: Parameters-PseudonymizeSecondary-request-example-1
 InstanceOf: Parameters
+Description: "An example of a $anonymizepseudonymize-secondary request of type string"
 Usage: #example
 * parameter[+]
   * name = "original"
@@ -89,6 +90,7 @@ Usage: #example
 
 Instance: Parameters-PseudonymizeSecondary-response-example-1
 InstanceOf: Parameters
+Description: "An example of a $anonymizepseudonymize-secondary request response"
 Usage: #example
 * parameter[+]
   * name = "secondarypseudonym"

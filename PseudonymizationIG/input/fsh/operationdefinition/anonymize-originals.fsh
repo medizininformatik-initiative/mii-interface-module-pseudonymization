@@ -1,16 +1,16 @@
 Instance: AnonymizeOriginals
 InstanceOf: OperationDefinition
-Description: "Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht."
+Description: "Anonymises a given list of 1-n original values within the specified domain. The reference of original value and pseudonym is permanently and irreversibly deleted."
 Usage: #definition
 * publisher = "Medizininformatik Inititative"
-* description = "Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht."
+* description = "Anonymises a given list of 1-n original values within the specified domain. The reference of original value and pseudonym is permanently and irreversibly deleted."
 * name = "Anonymize-Originals"
-* title = "anonymizeOriginals"
+* title = "anonymize-originals"
 * status = #active
 * kind = #operation
 * affectsState = true
 * code = #anonymize-originals
-* comment = "Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht."
+* comment = "Anonymises a given list of 1-n original values within the specified domain. The reference of original value and pseudonym is permanently and irreversibly deleted."
 * system = true
 * type = false
 * instance = false
@@ -78,6 +78,7 @@ Usage: #definition
 
 Instance: Parameters-AnonymizeOriginals-request-example-1
 InstanceOf: Parameters
+Description: "An example of a $anonymize-originals request using a original value of type string"
 Usage: #example
 * parameter[+].name = "original"
 * parameter[=].part[0].name = "target"
@@ -87,6 +88,7 @@ Usage: #example
 
 Instance: Parameters-AnonymizeOriginals-response-example-1
 InstanceOf: Parameters
+Description: "An example of a $anonymize-originals request response"
 Usage: #example
 * parameter[+].name = "successStatus"
 * parameter[=].part[0].name = "target"
