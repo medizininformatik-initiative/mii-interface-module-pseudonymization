@@ -20,24 +20,33 @@ Usage: #example
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-1
 InstanceOf: Parameters
 Usage: #inline
-* parameter[0].name = "original"
-* parameter[=].valueString = "an-original-value-1"
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain"
+* parameter[+].name = "original"
+* parameter[=].part[0].name = "target"
+* parameter[=].part[=].valueString = "pseudonym-domain"
+* parameter[=].part[+].name = "value"
+* parameter[=].part[=].valueString = "an-original-value-1"
+* parameter[=].part[+].name = "allowCreate"
+* parameter[=].part[=].valueBoolean = true
 
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-2
 InstanceOf: Parameters
 Usage: #inline
-* parameter[0].name = "original"
+* parameter[+].name = "original"
+* parameter[=].part[0].name = "target"
+* parameter[=].part[=].valueString = "pseudonym-domain"
+* parameter[=].part[+].name = "value"
 * parameter[=].valueIdentifier.system = "https://example.com/original-ids"
 * parameter[=].valueIdentifier.value = "an-original-identifier-value"
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain"
+* parameter[=].part[+].name = "allowCreate"
+* parameter[=].part[=].valueBoolean = true
 
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-3
 InstanceOf: Parameters
 Usage: #inline
-* parameter[0].name = "original"
-* parameter[=].valueString = "an-original-value-2"
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain-that-doesn't-exist"
+* parameter[+].name = "original"
+* parameter[=].part[0].name = "target"
+* parameter[=].part[=].valueString = "pseudonym-domain-that-doesn't-exist"
+* parameter[=].part[+].name = "value"
+* parameter[=].part[=].valueString = "an-original-value-1"
+* parameter[=].part[+].name = "allowCreate"
+* parameter[=].part[=].valueBoolean = true
