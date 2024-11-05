@@ -14,7 +14,7 @@ Realm|DE
 
 ### Inhaltsverzeichnis
 - [Hintergrund](Hintergrund.html)
-- [Use Cases](usecases.html)
+- [Use Cases](UseCases.html)
 - [Schnittstelle](interface.html)
 - [Artefakte](artifacts.html)
 - [Nächste Schritte](nextsteps.html)
