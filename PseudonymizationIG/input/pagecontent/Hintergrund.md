@@ -16,7 +16,7 @@ vgl. Konzeptdokument der Task Force *Übergreifende Schnittstellen* ([Link](Link
 
 ## Vereinheitlichung
 
-Ziel der Spezifikation ist eine einheitliche Pseudonymisierungs-Schnittstelle, die die anvisierten [Use Cases](Use Cases.html) unterstützt, um die nötige Flexibilität bei der Umsetzung am MII-Standort unabhängig von der Wahl der zugrundeliegenden Softwarelösung grundsätzlich zu ermöglichen.
+Ziel der Spezifikation ist eine einheitliche Pseudonymisierungs-Schnittstelle, die die anvisierten [Use Cases](Use Cases.html) (1, 3a, 3b) unterstützt, um die nötige Flexibilität bei der Umsetzung am MII-Standort unabhängig von der Wahl der zugrundeliegenden Softwarelösung grundsätzlich zu ermöglichen.
 
 Dabei soll der Fokus auf erforderliche **Basisfunktionalitäten**, abgestimmte Parameter und ein möglichst einheitliches Fehlerverhalten gelegt werden.
 
