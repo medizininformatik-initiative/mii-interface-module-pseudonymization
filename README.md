@@ -1,4 +1,4 @@
-# fhir-pseudonyize-operations
+# fhir-pseudonymize-operations
 
 ## Development
 
