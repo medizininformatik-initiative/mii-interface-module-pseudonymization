@@ -13,7 +13,7 @@ Realm|DE
 ### Inhaltsverzeichnis
 - [Hintergrund](Hintergrund.html)
 - [Use Cases](UseCases.html)
-- [Schnittstelle und Beispiele](interface.html)
+- [Schnittstelle und Beispiele](Funktionen.html)
 
 ### Impressum
 
