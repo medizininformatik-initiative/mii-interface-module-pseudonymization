@@ -1,4 +1,3 @@
-![](https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png){: align="right" width="150px"}
 # Implementation Guide für "MII-Schnittstelle Pseudonymisierung"
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation der einheitlichen MII-Schnittstelle für Pseudonymisierung.
