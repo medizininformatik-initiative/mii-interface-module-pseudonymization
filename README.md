@@ -1,14 +1,33 @@
-# fhir-pseudonymize-operations
+![](https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png){: align="right" width="150px"}
+# Implementation Guide für "MII-Schnittstelle Pseudonymisierung"
 
-## Development
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation der einheitlichen MII-Schnittstelle für Pseudonymisierung.
 
-Install <https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server>.
+## Online-Version des Leitfadens
 
-```sh
-docker run --rm -it -v $PWD/:/opt/ig-build-tools/workspace ghcr.io/miracum/ig-build-tools:v2.0.60
-cd PseudonymizationIG/
-sushi .
-java -jar /usr/local/bin/publisher.jar -ig ig.ini
-```
+Der kompilierte Leitfaden ist verfügbar https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/
 
-Right-click on `PseudonymizationIG/output/index.html` -> `Show Preview`
+## Impressum
+
+Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative im Jahr 2024 auf Grundlage des vorab erstellten [Konzept-Dokumentes](Link) erstellt worden.
+
+## Autoren und Ansprechpartner
+
+Inhaltlich verantwortlich für die hier dargestellten Inhalte ist die MII Taskforce 'Übergreifende Schnittstellen'.
+
+Die Konzeptarbeit im Vorfeld erfolgte durch:
+- Martin Bialke
+- Christian Gulden
+- Johanna Eicher
+
+sowie unter Mitarbeit von
+- Christopher Hampf
+- Peter Pallaoro
+- Helmut Spengler
+- Raffael Bild
+- Tobias Brieden
+- Julian Gründner
+
+Die Erstellung von IG und Artefakten erfolgte durch:
+- Martin Bialke
+- Christian Gulden

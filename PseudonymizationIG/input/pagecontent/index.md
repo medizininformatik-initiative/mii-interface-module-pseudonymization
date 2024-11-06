@@ -28,7 +28,7 @@ Die Konzeptarbeit erfolgte durch:
 - Christian Gulden
 - Johanna Eicher
 
-- sowie unter Mitarbeit von
+sowie unter Mitarbeit von
 - Christopher Hampf
 - Peter Pallaoro
 - Helmut Spengler
