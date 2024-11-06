@@ -1,3 +1,0 @@
-## Nächste Schritte
-
-Details folgen

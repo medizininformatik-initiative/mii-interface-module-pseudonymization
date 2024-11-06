@@ -1,13 +1,11 @@
-![](https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png){: align="right" width="200px"}
-# Implementation Guide "Schnittstelle Pseudonymisierung"
-
-**Hinweis**: *TODO*
+![](https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png){: align="right" width="150px"}
+# Implementation Guide für "MII-Schnittstelle Pseudonymisierung"
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation der einheitlichen MII-Schnittstelle für Pseudonymisierung.
 
 |Veröffentlichung / Status||
 --|--
-Datum|2024-11-01
+Datum|2024-11-06
 Version|0.9.0
 Status|draft
 Realm|DE
@@ -15,25 +13,32 @@ Realm|DE
 ### Inhaltsverzeichnis
 - [Hintergrund](Hintergrund.html)
 - [Use Cases](UseCases.html)
-- [Schnittstelle](interface.html)
-- [Artefakte](artifacts.html)
-- [Nächste Schritte](nextsteps.html)
+- [Schnittstelle und Beispiele](interface.html)
 
 ### Impressum
 
-Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative erstellt worden.
+Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative im Jahr 2024 auf Grundlage des vorab erstellten [Konzept-Dokumentes](Link) erstellt worden.
 
 ### Autoren und Ansprechpartner
 
-Inhaltlich verantwortlich für das hier dargestellten Inhalte ist die MII Taskforce 'Übergreifende Schnittstellen'.
+Inhaltlich verantwortlich für die hier dargestellten Inhalte ist die MII Taskforce 'Übergreifende Schnittstellen'.
 
-Die Konzeptarbeit und IG-Erstellung erfolgte durch:
-- Martin Bialke (Greifswald)
-- Christian Gulden (Erlangen)
-- Johanna Eicher (München)
+Die Konzeptarbeit erfolgte durch:
+- Martin Bialke
+- Christian Gulden
+- Johanna Eicher
 
-sowie unter Mitarbeit u.a. von
-- Christopher Hampf (Greifswald)
+- sowie unter Mitarbeit von
+- Christopher Hampf
+- Peter Pallaoro
+- Helmut Spengler
+- Raffael Bild
+- Tobias Brieden
+- Julian Gründner
+
+Die IG-Erstellung erfolgte durch:
+- Martin Bialke
+- Christian Gulden
 
 Kommentare können (nach kostenloser Anmeldung) in GitHub als Issue erstellt werden.
 
