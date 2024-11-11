@@ -6,10 +6,10 @@
 id: PseudonymizationIG
 canonical: https://medizininformatik-initiative.de/fhir/fhir-pseudonymization
 name: PseudonymizationIG
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: Implementation Guide MII Schnittstelle Pseudonymisierung
+description: Implementation Guide für einheitliche Schnittstelle Pseudonymisierung in der MII
 status: draft # draft | active | retired | unknown
-version: 0.1.0 # x-release-please-version
+version: 0.9.0 # x-release-please-version
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
@@ -76,7 +76,11 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Hintergrund: Hintergrund.html
+  Use Cases: UseCases.html
+  Schnittstelle und Beispiele: Funktionen.html
+  Artefakte: artifacts.html
+
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

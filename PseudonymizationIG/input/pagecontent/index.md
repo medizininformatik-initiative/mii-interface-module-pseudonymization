@@ -1,11 +1,11 @@
-![](https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png){: align="right" width="150px"}
+![](https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png){: align="right" width="135px"}
 # Implementation Guide für "MII-Schnittstelle Pseudonymisierung"
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation der einheitlichen MII-Schnittstelle für Pseudonymisierung.
 
 |Veröffentlichung / Status||
 --|--
-Datum|2024-11-06
+Datum|2024-11-11
 Version|0.9.0
 Status|draft
 Realm|DE
@@ -14,10 +14,11 @@ Realm|DE
 - [Hintergrund](Hintergrund.html)
 - [Use Cases](UseCases.html)
 - [Schnittstelle und Beispiele](Funktionen.html)
+- [Artefakte](artifacts.html)
 
 ### Impressum
 
-Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative im Jahr 2024 auf Grundlage des vorab erstellten [Konzept-Dokumentes](Link) erstellt worden.
+Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative im Jahr 2024 auf Grundlage des vorab erstellten [Konzept-Dokumentes](https://tmfev.sharepoint.com/:w:/r/sites/tmf/mi-i/bergreifende%20Schnittstellen/07_Konzepte_WIP/Pseudonymisierung/MII-Konzept%20Einheitliche%20Schnittstelle%20Pseudonymisierung_1.0.docx?d=w939332ac9fe040b08b90cb8a9d9c7b5a&csf=1&web=1&e=DWQXBh) erstellt worden.
 
 ### Autoren und Ansprechpartner
 
