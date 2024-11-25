@@ -1,6 +1,6 @@
 Version 1.0 der Schnittstelle sieht 5 Basisfunktionalitäten zur Umsetzung der folgenden Use Cases vor:
 - [Erzeugung und Verwaltung von Personenpseudonymen](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/UseCases.html#use-case-1-erzeugung-und-verwaltung-von-personenpseudonymen-auf-basis-vorhandener-identifier)
-- [Sekundärpseudonymisierung *ohne* standortübergreifendes Record Linkag](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/UseCases.html#use-case-3a-sekund%C3%A4rpseudonymisierung-ohne-standort%C3%BCbergreifendes-record-linkage)
+- [Sekundärpseudonymisierung *ohne* standortübergreifendes Record Linkage](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/UseCases.html#use-case-3a-sekund%C3%A4rpseudonymisierung-ohne-standort%C3%BCbergreifendes-record-linkage)
 - [Sekundärpseudonymisierung **mit** standortübergreifendem Record Linkage](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/UseCases.html#use-case-3b-sekund%C3%A4rpseudonymisierung-mit-standort%C3%BCbergreifendem-record-linkage)
 
  Operation                 |Spezifikation|Beispiel Requests|Beispiel Responses

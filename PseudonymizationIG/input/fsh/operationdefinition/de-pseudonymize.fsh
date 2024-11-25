@@ -19,7 +19,7 @@ Usage: #definition
   * name = #pseudonym
   * use = #in
   * min = 1
-  * max = "*"
+  * max = "1"
   * documentation = "Pseudonyme"
   * part[+]
     * name = #target
@@ -57,7 +57,7 @@ Usage: #definition
   * part[+]
     * name = #target
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Pseudonymisierungskontext"
     * type = #Identifier
@@ -71,7 +71,7 @@ Usage: #definition
   * part[+]
     * name = #pseudonym
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Personen-Pseudonym."
     * type = #Identifier

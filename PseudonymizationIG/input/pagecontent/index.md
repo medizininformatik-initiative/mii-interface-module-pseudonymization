@@ -3,7 +3,7 @@
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation der einheitlichen MII-Schnittstelle für Pseudonymisierung.
 
-|Veröffentlichung / Status||
+|Veröffentlichung|Status|
 --|--
 Datum|2024-11-11
 Version|0.9.0

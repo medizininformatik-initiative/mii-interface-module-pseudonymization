@@ -19,7 +19,7 @@ Description: "Deletes a given list of 1-n entries (identified by the original va
   * name = #original
   * use = #in
   * min = 1
-  * max = "*"
+  * max = "1"
   * documentation = "Originalwerte"
   * part[+]
     * name = #target
@@ -52,7 +52,7 @@ Description: "Deletes a given list of 1-n entries (identified by the original va
   * name = #successStatus
   * use = #out
   * min = 1
-  * max = "*"
+  * max = "1"
   * documentation = "Status-Rückgabe der einzelnen durchgeführten Löschungen"
   * part[0]
     * name = #target

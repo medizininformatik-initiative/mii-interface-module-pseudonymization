@@ -19,7 +19,7 @@ Description: "Generation of a specific number of pseudonyms in an existing pseud
   * name = #original
   * use = #in
   * min = 1
-  * max = "*"
+  * max = "1"
   * documentation = "Originalwerte"
   * part[+]
     * name = #target
@@ -52,14 +52,14 @@ Description: "Generation of a specific number of pseudonyms in an existing pseud
   * part[+]
     * name = #target
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Pseudonymisierungskontext"
     * type = #Identifier
   * part[+]
     * name = #original
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Original-Identifikator (in der Regel Personenpseudonym)."
     * type = #Identifier

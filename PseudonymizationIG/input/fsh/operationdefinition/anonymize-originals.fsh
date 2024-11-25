@@ -19,7 +19,7 @@ Usage: #definition
   * name = #original
   * use = #in
   * min = 1
-  * max = "*"
+  * max = "1"
   * documentation = "Liste von 1-n Originalwerten"
   * part[+]
     * name = #target
@@ -52,19 +52,19 @@ Usage: #definition
   * name = #successStatus
   * use = #out
   * min = 0
-  * max = "*"
+  * max = "1"
   * documentation = "Status-Rückgabe der einzelnen durchgeführten Anonymisierungen"
   * part[0]
     * name = #target
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Pseudonymisierungskontext"
     * type = #Identifier
   * part[+]
     * name = #original
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Original-Identifikator"
     * type = #Identifier

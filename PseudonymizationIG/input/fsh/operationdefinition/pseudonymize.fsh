@@ -19,7 +19,7 @@ Usage: #definition
   * name = #original
   * use = #in
   * min = 1
-  * max = "*"
+  * max = "1"
   * documentation = "Originalwerte"
   * part[+]
     * name = #target
@@ -64,7 +64,7 @@ Usage: #definition
   * part[+]
     * name = #target
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Pseudonymisierungskontext"
     * type = #Element
@@ -77,7 +77,7 @@ Usage: #definition
   * part[+]
     * name = #original
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Original-Identifikator"
     * type = #Element
