@@ -63,14 +63,14 @@ Das standortübergreifende Record Linkage findet mittels fTTP/übergreifender Tr
 
 Das Pseudonym "Nutzer-Projekt" betitelt dabei das Pseudonym, welches von der fTTP/üTHS auf Basis des Record Linkages vergeben wird (z.B. ”D1C1U3B3R”)
 
-**Geltende Vorraussetzungen:**
+**Geltende Voraussetzungen:**
 -	Für die Person wurden im Vorfeld auf Basis ein Record Linkage auf Basis von IDAT am Standort durchgeführt und es wurden Bloomfilter (Konfiguration nach Projektvorgabe) erzeugt.
 -	Für die Person wurde bereits ein übergreifendes Record Linkage auf Basis des Bloomfilters durchgeführt und ein für den Standort eindeutiges übergreifendes Personenpseudonym erzeugt und zugeordnet (z.B. „D1C1U3B3R“). Beide Schritte können beispielsweise durch eine fTTP erfolgen.
 -	Für die Person liegen n med. Datensätze vor.
 
 **Möglicher Ablauf**
 Konkrete Abläufe können sich je Projektvorgabe unterscheiden:
-1.	Die Erstellung der Sekundärpseudonyme erfolgt mittels Operation [`$pseudonymize-secondary`](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-PseudonymizeSecondary.html). Dabei kann die erforderliche Funktionalität lokal oder auch föderiert bereitgestellt und genutzt werden. Es ist keine zusätzliche Schnittstelle/Schnittstellenfunktionalität hinaus erforderlich. Der Unterschied liegt allein im Ablauf.
+1.	Die Erstellung der Sekundärpseudonyme erfolgt mittels Operation [`$pseudonymize unter Angabe des count-Parameters`](https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/OperationDefinition-Pseudonymize.html). Dabei kann die erforderliche Funktionalität lokal oder auch föderiert bereitgestellt und genutzt werden. Es ist keine zusätzliche Schnittstelle/Schnittstellenfunktionalität hinaus erforderlich. Der Unterschied liegt allein im Ablauf.
 2.	Die abschließende Ersetzung des bisherigen Personenpseudonyms in den herauszugebenden Datensätzen durch die erzeugten Sekundärpseudonyme (vgl.  Use Case 3a, Schritt 2) wird durch individuelle Integrationsarbeit / ETL-Prozesse am ausführenden Standort vorgenommen.
 
 Anzusprechender Endpunkt der Schnittstelle: je nach Projektvorgabe lokaler Schnittstellen-Endpunkt am Standort oder fTTP

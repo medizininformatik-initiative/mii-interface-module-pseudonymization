@@ -59,7 +59,7 @@ Usage: #definition
     * use = #out
     * min = 0
     * max = "1"
-    * documentation = "Pseudonymisierungskontext"
+    * documentation = "Pseudonymisierungskontext (identical with request)"
     * type = #Identifier
   * part[+]
     * name = #value
@@ -73,7 +73,7 @@ Usage: #definition
     * use = #out
     * min = 0
     * max = "1"
-    * documentation = "Personen-Pseudonym."
+    * documentation = "Personen-Pseudonym  (identical with request)"
     * type = #Identifier
 
 
