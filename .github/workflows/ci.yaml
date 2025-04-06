@@ -19,7 +19,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    container: ghcr.io/miracum/ig-build-tools:v2.1.6@sha256:26bc1eaf0a259e8c16d0eeeb8622c7aecaa45d41e39f158696f9aec90b142596
+    container: ghcr.io/miracum/ig-build-tools:v2.2.0@sha256:66ece7632915e53d3cc34188e6e5f148c0c0967b5862cc1f6d88a60a3fd1090b
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: build ig
@@ -43,7 +43,7 @@ jobs:
       contents: write
       pages: write
       id-token: write
-    container: ghcr.io/miracum/ig-build-tools:v2.1.6@sha256:26bc1eaf0a259e8c16d0eeeb8622c7aecaa45d41e39f158696f9aec90b142596
+    container: ghcr.io/miracum/ig-build-tools:v2.2.0@sha256:66ece7632915e53d3cc34188e6e5f148c0c0967b5862cc1f6d88a60a3fd1090b
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
