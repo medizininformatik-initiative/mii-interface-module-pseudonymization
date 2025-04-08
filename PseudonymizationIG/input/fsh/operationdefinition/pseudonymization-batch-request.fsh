@@ -20,13 +20,12 @@ Usage: #example
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-1
 InstanceOf: Parameters
 Usage: #inline
+* parameter[+].name = "target"
+* parameter[=].valueString = "pseudonym-domain"
 * parameter[+].name = "original"
-* parameter[=].part[0].name = "target"
-* parameter[=].part[=].valueString = "pseudonym-domain"
-* parameter[=].part[+].name = "value"
-* parameter[=].part[=].valueString = "an-original-value-1"
-* parameter[=].part[+].name = "allowCreate"
-* parameter[=].part[=].valueBoolean = true
+* parameter[=].valueString = "an-original-value-1"
+* parameter[+].name = "allowCreate"
+* parameter[=].valueBoolean = true
 
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-2
 InstanceOf: Parameters

@@ -12,4 +12,6 @@ Ziel der Spezifikation ist eine einheitliche Pseudonymisierungs-Schnittstelle, d
 
 Dabei soll der Fokus auf erforderliche **Basisfunktionalitäten**, abgestimmte Parameter und ein möglichst einheitliches Fehlerverhalten gelegt werden.
 
-Dabei bietet es sich an auf bereits erprobte Vorgehensweisen und etablierte Ansätze zu setzen, da an den teilnehmenden Standorten bereits erhebliche Aufwände in die Integration ausgewählter Lösungen ([gPAS](https://ths-greifswald.de/gpas/#verbreitung), [FHIR Pseudonymizer](https://github.com/miracum/fhir-pseudonymizer), [entici](https://gitlab.com/mri-tum/aiim/entici)) geflossen sind und diese nunmehr (Stand 2024) erfolgreich produktiv zum Einsatz kommen.
+Dabei bietet es sich an auf bereits erprobte Vorgehensweisen und etablierte Ansätze zu setzen, da an den teilnehmenden Standorten bereits erhebliche Aufwände in die Integration ausgewählter Lösungen ([gPAS](https://ths-greifswald.de/gpas/#verbreitung), [FHIR Pseudonymizer](https://github.com/miracum/fhir-pseudonymizer), [entici](https://entici.org/)) geflossen sind und diese nunmehr (Stand 2024) erfolgreich produktiv zum Einsatz kommen.
+
+**Hinweis: In der vorliegenden ersten Version des IGs wird das Thema Listenverarbeitung zunächst außen vor gelassen und sind die Eingabe-Parameter aller Operations bewußt auf n=1 limitiert.**
