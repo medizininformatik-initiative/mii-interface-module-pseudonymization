@@ -5,8 +5,8 @@ Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation der einheitlic
 
 |Veröffentlichung|Status|
 --|--
-Datum|2025-04-08
-Version|1.0.2
+Datum|2025-07-10
+Version|1.1.0
 Status|draft
 Realm|DE
 

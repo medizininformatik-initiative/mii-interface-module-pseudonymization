@@ -54,14 +54,26 @@ Usage: #definition
     * min = 0
     * max = "1"
     * documentation = "Pseudonymisation context"
-    * type = #Identifier
+    * type = #Element
+      * extension[0]
+        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
+        * valueUri = "string"
+      * extension[+]
+        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
+        * valueUri = "Identifier"
   * part[+]
     * name = #original
     * use = #out
     * min = 0
     * max = "1"
     * documentation = "Original-Identifier"
-    * type = #Identifier
+    * type = #Element
+      * extension[0]
+        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
+        * valueUri = "string"
+    * extension[+]
+      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
+      * valueUri = "Identifier"
   * part[+]
     * name = #result-code
     * use = #out
@@ -75,7 +87,7 @@ InstanceOf: Parameters
 Description: "An example of a $anonymize-original request using a original value of type string"
 Usage: #example
 * parameter[+].name = "target"
-* parameter[=].valueString = "Herausgabe1"
+* parameter[=].valueString = "Transfer1"
 * parameter[+].name = "original"
 * parameter[=].valueString = "D1CL0CAL1"
 
@@ -86,7 +98,7 @@ Usage: #example
 * parameter[+].name = "successStatus"
 * parameter[=].part[0].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://sample/psn-system"
-* parameter[=].part[=].valueIdentifier.value = "Herausgabe1"
+* parameter[=].part[=].valueIdentifier.value = "Transfer1"
 * parameter[=].part[+].name = "original"
 * parameter[=].part[=].valueIdentifier.system = "https://fhir.example.com/identifiers/mrn"
 * parameter[=].part[=].valueIdentifier.value = "D1CL0CAL1"

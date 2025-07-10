@@ -1,6 +1,6 @@
 Instance: pseudonymize-example-bundle-batch-response
 InstanceOf: Bundle
-Description: "An example response bundle for the pseudonymize batch request"
+Description: "An example response bundle for the pseudonymize batch request in a single psn domain using opdef $pseudonymize"
 Usage: #example
 * meta.profile = "https://fhir.example.com/StructureDefinition/pseudonymize-batch-response"
 * type = #batch-response
@@ -17,28 +17,26 @@ Usage: #example
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-response-1
 InstanceOf: Parameters
 Usage: #inline
-* parameter[0].name = "pseudonym"
-* parameter[=].part[0].name = "target"
-* parameter[=].part[=].valueString = "pseudonym-domain"
-* parameter[=].part[+].name = "original"
-* parameter[=].part[=].valueString = "an-original-value-1"
-* parameter[=].part[+].name = "value"
-* parameter[=].part[=].valueString = "pseudonym-for-original-value-1"
+* parameter[+].name = "target"
+* parameter[=].valueString = "pseudonym-domain"
+* parameter[+].name = "original"
+* parameter[=].valueString = "an-original-value-1"
+* parameter[+].name = "pseudonym"
+* parameter[=].valueString = "pseudonym-for-original-value-1"
 
 
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-response-2
 InstanceOf: Parameters
 Usage: #inline
-* parameter[0].name = "pseudonym"
-* parameter[=].part[0].name = "target"
-* parameter[=].part[=].valueIdentifier.system = "https://sample/psn-system"
-* parameter[=].part[=].valueIdentifier.value = "pseudonym-domain"
-* parameter[=].part[+].name = "original"
+* parameter[+].name = "target"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "pseudonym-domain"
+* parameter[+].name = "original"
 * parameter[=].valueIdentifier.system = "https://example.com/original-ids"
 * parameter[=].valueIdentifier.value = "an-original-identifier-value"
-* parameter[=].part[+].name = "value"
-* parameter.valueIdentifier.system = "https://example.com/pseudonym-ids"
-* parameter.valueIdentifier.value = "a-pseudonymized-identifier-value"
+* parameter[+].name = "pseudonym"
+* parameter[=].valueIdentifier.system = "https://example.com/pseudonym-ids"
+* parameter[=].valueIdentifier.value = "a-pseudonymized-identifier-value"
 
 Instance: c99b414d-e235-4f5f-8b5e-446ed5f9cd71
 InstanceOf: OperationOutcome

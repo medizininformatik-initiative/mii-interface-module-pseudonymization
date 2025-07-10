@@ -1,6 +1,6 @@
 Instance: pseudonymize-example-bundle-batch-request
 InstanceOf: Bundle
-Description: "An example batch bundle to create multiple pseudonyms"
+Description: "An example batch bundle to create multiple pseudonyms in a single psn domain using opdef $pseudonymize"
 Usage: #example
 * meta.profile = "https://fhir.example.com/StructureDefinition/pseudonymize-batch-request"
 * type = #batch
@@ -30,22 +30,20 @@ Usage: #inline
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-2
 InstanceOf: Parameters
 Usage: #inline
+* parameter[+].name = "target"
+* parameter[=].valueString = "pseudonym-domain"
 * parameter[+].name = "original"
-* parameter[=].part[0].name = "target"
-* parameter[=].part[=].valueString = "pseudonym-domain"
-* parameter[=].part[+].name = "value"
 * parameter[=].valueIdentifier.system = "https://example.com/original-ids"
 * parameter[=].valueIdentifier.value = "an-original-identifier-value"
-* parameter[=].part[+].name = "allowCreate"
-* parameter[=].part[=].valueBoolean = true
+* parameter[+].name = "allowCreate"
+* parameter[=].valueBoolean = true
 
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-3
 InstanceOf: Parameters
 Usage: #inline
+* parameter[+].name = "target"
+* parameter[=].valueString = "pseudonym-domain-that-doesn't-exist"
 * parameter[+].name = "original"
-* parameter[=].part[0].name = "target"
-* parameter[=].part[=].valueString = "pseudonym-domain-that-doesn't-exist"
-* parameter[=].part[+].name = "value"
-* parameter[=].part[=].valueString = "an-original-value-1"
-* parameter[=].part[+].name = "allowCreate"
-* parameter[=].part[=].valueBoolean = true
+* parameter[=].valueString = "an-original-value-1"
+* parameter[+].name = "allowCreate"
+* parameter[=].valueBoolean = true
