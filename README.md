@@ -1,6 +1,6 @@
-# Implementation Guide für "MII-Schnittstelle Pseudonymisierung"
+# Implementation Guide für Schnittstelle zur Pseudonymisierung in der MII
 
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation der einheitlichen MII-Schnittstelle für Pseudonymisierung.
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation einer Pseudonymisierungs-Schnittstelle. Diese wurde primär mit Fokus auf Anwendung in der MII entwickelt, ist gleichzeitig aber darüber hinaus anwendbar.
 
 ## Online-Version des Leitfadens
 
