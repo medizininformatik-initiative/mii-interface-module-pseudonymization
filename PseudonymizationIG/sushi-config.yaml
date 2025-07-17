@@ -9,7 +9,7 @@ name: PseudonymizationIG
 title: Implementation Guide Pseudonymization Interface for the MII
 description: Implementation Guide Pseudonymization Interface for the MII
 status: active # draft | active | retired | unknown
-version: 1.1.0 # x-release-please-version
+version: 0.1.1 # x-release-please-version
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
