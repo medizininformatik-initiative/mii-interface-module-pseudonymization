@@ -47,7 +47,7 @@ Description: "Deletes a single pseudonym-entry (identified by the original value
   * use = #out
   * min = 1
   * max = "1"
-  * documentation = "Status return of the individual anonymisations performed"
+  * documentation = "Status return of the individual deletions performed"
   * type = #OperationOutcome
 
 Instance: Parameters-DeletePseudonym-request-example-1
