@@ -1,6 +1,7 @@
 In der MII werden unterschiedliche Lösungen zur Pseudonymisierung von Gesundheitsdaten eingesetzt.
 
 Dabei wird der Begriff „Pseudonymisierung“ unterschiedlich ausgelegt. Grundlegend kann in unterschiedliche Szenarien und Schritte der Pseudonymisierung unterschieden werden:
+
 1. Erzeugung und Verwaltung von Personen-Pseudonymen auf Basis vorhandener Identifier
 2. Die Anwendung von Pseudonymen auf einen Datenbestand
 3. Sekundärpseudonymisierung
