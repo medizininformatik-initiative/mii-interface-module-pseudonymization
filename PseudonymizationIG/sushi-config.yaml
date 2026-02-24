@@ -4,12 +4,12 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: PseudonymizationIG
-canonical: https://medizininformatik-initiative.de/fhir/fhir-pseudonymization
+canonical: https://www.medizininformatik-initiative.de/fhir/ext/mii-interface-module-pseudonymization
 name: PseudonymizationIG
 title: Implementation Guide Pseudonymization Interface for the MII
 description: Implementation Guide Pseudonymization Interface for the MII
-status: active # draft | active | retired | unknown
-version: 1.1.0 # x-release-please-version
+status: draft # draft | active | retired | unknown
+version: 2026.0.0-ballot.1 # x-release-please-version
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
@@ -18,7 +18,12 @@ releaseLabel: ci-build
 publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-iniitative.de
-  # email: test@example.org
+
+
+dependencies:
+  de.basisprofil.r4: 1.5.x
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.x
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced

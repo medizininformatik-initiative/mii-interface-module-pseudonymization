@@ -1,0 +1,34 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.metadaten.provenance",
+  "version": "2026.0.0-ballot",
+  "description": "MII Kerndatensatz Modul Metadaten Provenance - Dokumentation der Herkunft und Deduplizierung onkologischer Prozeduren",
+  "author": "thomasdebertshaeuser",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "keywords": [
+    "MII",
+    "KDS",
+    "Provenance",
+    "Metadaten",
+    "Deduplizierung"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://www.medizininformatik-initiative.de/",
+  "directories": {
+    "lib": "package",
+    "example": "examples"
+  },
+  "title": "MII IG Metadaten Provenance",
+  "maintainers": [
+    {
+      "name": "Medizininformatik Initiative"
+    }
+  ],
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
+  "dependencies": {
+    "de.basisprofil.r4": "1.5.x",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.x"
+  }
+}
