@@ -22,6 +22,9 @@ jobs:
     container: ghcr.io/miracum/ig-build-tools:v2.2.28@sha256:234c9e29eedd1e0bbf153399558d9c22b9d03d0f89549d11d6e06d3463a99049
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - name: add to safe dir
+        run: |
+          git config --global --add safe.directory /__w/mii-interface-module-pseudonymization/mii-interface-module-pseudonymization
       - name: build ig
         working-directory: PseudonymizationIG/
         run: |
