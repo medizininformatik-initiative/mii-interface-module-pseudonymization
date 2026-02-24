@@ -7,8 +7,8 @@ Diese wurde primär mit Fokus auf Anwendung in der MII entwickelt, ist gleichzei
 
 |Veröffentlichung|Status|
 --|--
-Datum|2025-07-17
-Version|1.1.0-ballot.1
+Datum|2026-02-24
+Version|2026.0.0-ballot.1
 Status| draft
 Realm|DE
 

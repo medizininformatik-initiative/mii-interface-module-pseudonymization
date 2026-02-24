@@ -130,3 +130,4 @@ dist
 .pnp.*
 
 fsh-generated/
+fhirpkg.lock.json

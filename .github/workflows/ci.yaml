@@ -25,7 +25,8 @@ jobs:
       - name: build ig
         working-directory: PseudonymizationIG/
         run: |
-          java -jar /usr/local/bin/publisher.jar -ig ig.ini
+          ./_updatePublisher --yes
+          ./_genonce.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
