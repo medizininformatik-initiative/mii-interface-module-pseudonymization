@@ -9,7 +9,7 @@ Diese wurde primär mit Fokus auf Anwendung in der MII entwickelt, ist gleichzei
 --|--
 Datum|2026-02-24
 Version|2026.0.0-ballot.1
-Status| draft
+Status|ballot
 Realm|DE
 
 ### Inhaltsverzeichnis
