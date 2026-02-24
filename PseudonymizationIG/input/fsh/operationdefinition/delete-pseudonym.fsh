@@ -75,6 +75,6 @@ Description: "An example of a $delete-pseudonym response with error"
 Usage: #example
 * issue
   * severity = #error
-  * code = #error
+  * code = #not-found
   * details.coding = http://hl7.org/fhir/issue-type#not-found
   * diagnostics = "Not Found."
