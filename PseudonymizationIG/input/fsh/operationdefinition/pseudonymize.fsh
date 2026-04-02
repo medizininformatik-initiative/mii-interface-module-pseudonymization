@@ -35,12 +35,12 @@ Usage: #definition
   * max = "1"
   * documentation = "Specification of the original identifier to be pseudonymised"
   * type = #Element
-    * extension[0]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "string"
-    * extension[+]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "Identifier"
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
+    * valueUri = "string"
+  * extension[+]
+    * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
+    * valueUri = "Identifier"
 * parameter[+]
   * name = #allowCreate
   * use = #in
