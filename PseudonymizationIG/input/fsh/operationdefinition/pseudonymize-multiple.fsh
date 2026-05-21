@@ -46,7 +46,7 @@ Description: "Generation of a specific number of pseudonyms in an existing pseud
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Number of to be generated pseudonyms"
+  * documentation = "Number of to be generated pseudonyms. Important: (1) 'count=0' means read only. All available pseudonyms for given originalvalue in target domain are returned. (2) 'count>0' means a specific number of additional pseudonyms (n=count) are generated for given originalvalue in target domain. Only these new pseudonyms are returned. (3) It is not possible to query selected pseudonyms for given originalvalue in target domain with this operation."
   * type = #integer
 
 * parameter[+]
