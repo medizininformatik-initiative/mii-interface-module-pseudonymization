@@ -100,7 +100,7 @@ InstanceOf: Parameters
 Description: "An example of a $pseudonymize-multiple request to create 3 (secondary) pseudonyms for one existing pseudonym within a multi-psn-domain"
 * parameter[+].name = "target"
 * parameter[=].valueString = "MultiPsnDomain"
-* parameter[+].name = "value"
+* parameter[+].name = "original"
 * parameter[=].valueIdentifier.system = "https://sample/multi-psn-capable-system"
 * parameter[=].valueIdentifier.value = "H3RAU56A8E"
 * parameter[+].name = "count"
