@@ -1,16 +1,16 @@
-Instance: Pseudonymize
+Instance: GetPseudonym
 InstanceOf: OperationDefinition
-Description: "Creates a single pseudonym for a single given original value. For use in single-pseudonym-domains only. In the response, the repetition of the input values (pseudonymisation context, original identifier) is possible, but is not binding. When returning these input values, however, it is mandatory to ensure that the output values of target or orginal are identical to the input values of target or orignal."
+Description: "Get an existing single pseudonym for a single given original value (Read Only). For use in single-pseudonym-domains only. In the response, the repetition of the input values (pseudonymisation context, original identifier) is possible, but is not binding. When returning these input values, however, it is mandatory to ensure that the output values of target or orginal are identical to the input values of target or orignal."
 Usage: #definition
-* name = "Pseudonymize"
-* title = "pseudonymize"
+* name = "Get-Pseudonym"
+* title = "get-pseudonym"
 * status = #active
 * kind = #operation
 * experimental = false
 * publisher = "Medizininformatik Inititative"
-* description = "Creates a single pseudonym for the given single original value. For use in single-pseudonym-domains only. The pseudonymization algorithm to be used is left to the implementers of the operation. Errors during the execution of the operation must be returned as OperationOutcome."
+* description = "Searches an existing single pseudonym for the given single original value (ready only). For use in single-pseudonym-domains only. The pseudonymization algorithm to be used is left to the implementers of the operation. Errors during the execution of the operation must be returned as OperationOutcome."
 * affectsState = true
-* code = #pseudonymize
+* code = #get-pseudonym
 * system = true
 * type = false
 * instance = false
@@ -82,26 +82,26 @@ Usage: #definition
       * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
       * valueUri = "Identifier"
 
-Instance: PseudonymizeRequestWithStringExample
+Instance: GetPseudonymRequestWithStringExample
 InstanceOf: Parameters
-Description: "An example of a $pseudonymize request within a single-pseudonym-domain using an original value of type string"
+Description: "An example of a $get-pseudonym request within a single-pseudonym-domain using an original value of type string"
 * parameter[+].name = "target"
 * parameter[=].valueString = "Transfer1"
 * parameter[+].name = "original"
 * parameter[=].valueString = "D1CL0CAL1"
 
-Instance: PseudonymizeRequestWithIdentifierExample
+Instance: GetPseudonymRequestWithIdentifierExample
 InstanceOf: Parameters
-Description: "An example of a $pseudonymize request within a single-pseudonym-domain using an original value of type identifier"
+Description: "An example of a $get-pseudonym request within a single-pseudonym-domain using an original value of type identifier"
 * parameter[+].name = "target"
 * parameter[=].valueString = "Transfer1"
 * parameter[+].name = "original"
 * parameter[=].valueIdentifier.system = "https://sample/psn-system"
 * parameter[=].valueIdentifier.value = "D1CL0CAL1"
 
-Instance: PseudonymizeIdentifierResponseExample
+Instance: GetPseudonymIdentifierResponseExample
 InstanceOf: Parameters
-Description: "An example of a response to a $pseudonymize request within a single-pseudonym-domain"
+Description: "An example of a response to a $get-pseudonym request within a single-pseudonym-domain"
 * parameter[+].name = "target"
 * parameter[=].valueIdentifier.system = "https://sample/psn-system"
 * parameter[=].valueIdentifier.value = "Transfer1"
@@ -112,9 +112,9 @@ Description: "An example of a response to a $pseudonymize request within a singl
 * parameter[=].valueIdentifier.system = "https://sample/psn-system"
 * parameter[=].valueIdentifier.value = "H3RAU56A8E"
 
-Instance: PseudonymizeStringResponseExample
+Instance: GetPseudonymStringResponseExample
 InstanceOf: Parameters
-Description: "An example of a response to a $pseudonymize request within a single-pseudonym-domain"
+Description: "An example of a response to a $get-pseudonym request within a single-pseudonym-domain"
 * parameter[+].name = "target"
 * parameter[=].valueString = "Transfer1"
 * parameter[+].name = "original"
