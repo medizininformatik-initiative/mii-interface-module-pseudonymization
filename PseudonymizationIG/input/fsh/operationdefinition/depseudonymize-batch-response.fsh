@@ -17,7 +17,7 @@ Usage: #example
 Instance: 0ee863aa-1fe7-4d5f-3333-8f5edc7981d9
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
+* parameter[+].name = "context"
 * parameter[=].valueIdentifier.system = "https://sample/psn-system"
 * parameter[=].valueIdentifier.value = "Transfer1"
 * parameter[+].name = "original"
@@ -41,4 +41,4 @@ Usage: #inline
 * issue.severity = #error
 * issue.code = #not-found
 * issue.diagnostics = "Unknown domain 'unknown-domain'."
-* issue.expression = "Parameters.parameter.where(name='target')"
+* issue.expression = "Parameters.parameter.where(name='context')"

@@ -16,8 +16,9 @@ Usage: #example
 Instance: 79378cb8-8f58-48e8-5555-60ac2755b674
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "MultiPsnDomain"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/multi-psn-capable-system"
+* parameter[=].valueIdentifier.value = "MultiPsnDomain"
 * parameter[+].name = "original"
 * parameter[=].valueIdentifier.system = "https://sample/multi-psn-capable-system"
 * parameter[=].valueIdentifier.value = "H3RAU56A8E1"
@@ -27,8 +28,9 @@ Usage: #inline
 Instance: 628ddc36-c8e4-4197-5555-2599677a9e7d
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain-that-doesn't-exist"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/multi-psn-capable-system"
+* parameter[=].valueIdentifier.value = "pseudonym-domain-that-doesn't-exist"
 * parameter[+].name = "original"
 * parameter[=].valueIdentifier.system = "https://sample/multi-psn-capable-system"
 * parameter[=].valueIdentifier.value = "H3RAU56A8E2"

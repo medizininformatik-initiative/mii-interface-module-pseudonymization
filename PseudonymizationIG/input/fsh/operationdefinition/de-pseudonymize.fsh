@@ -16,31 +16,19 @@ Usage: #definition
 * instance = false
 
 * parameter[+]
-  * name = #target
+  * name = #context
   * use = #in
   * min = 1
   * max = "1"
   * documentation = "Specification of the pseudonymisation context on the basis of which a personal pseudonym is searched for the specified original identifiers"
-  * type = #Element
-    * extension[0]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "string"
-    * extension[+]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "Identifier"
+  * type = #Identifier
 * parameter[+]
   * name = #pseudonym
   * use = #in
   * min = 1
   * max = "1"
   * documentation = "Specification of a pseudonym for which unique original values assigned in the specified pseudonymisation context are searched for"
-  * type = #Element
-    * extension[0]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "string"
-    * extension[+]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "Identifier"
+  * type = #Identifier
 * parameter[+]
   * name = #original
   * use = #out
@@ -48,58 +36,42 @@ Usage: #definition
   * max = "*"
   * documentation = ""
   * part[+]
-    * name = #target
+    * name = #context
     * use = #out
     * min = 0
     * max = "1"
     * documentation = "Pseudonymisation context (identical with request)"
-    * type = #Element
-      * extension[0]
-        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-        * valueUri = "string"
-      * extension[+]
-        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-        * valueUri = "Identifier"
+    * type = #Identifier
   * part[+]
     * name = #value
     * use = #out
     * min = 1
     * max = "1"
     * documentation = "Original-Identifier"
-    * type = #Element
-      * extension[0]
-        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-        * valueUri = "string"
-      * extension[+]
-        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-        * valueUri = "Identifier"
+    * type = #Identifier
   * part[+]
     * name = #pseudonym
     * use = #out
     * min = 0
     * max = "1"
     * documentation = "Personal pseudonym  (identical with request)"
-    * type = #Element
-      * extension[0]
-        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-        * valueUri = "string"
-      * extension[+]
-        * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-        * valueUri = "Identifier"
+    * type = #Identifier
 
-Instance: DePseudonymizeRequestWithStringExample
+Instance: DePseudonymizeRequestWithIdentifierExample
 InstanceOf: Parameters
-Description: "An example of a $de-pseudonymize request using a pseudonym value of type string"
-* parameter[+].name = "target"
-* parameter[=].valueString = "Transfer1"
+Description: "An example of a $de-pseudonymize request using a pseudonym value of type identifier"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "Transfer1"
 * parameter[+].name = "pseudonym"
-* parameter[=].valueString = "H3RAU56A8E"
+* parameter[=].valueIdentifier.system = "https://example.com/pseudonym-ids"
+* parameter[=].valueIdentifier.value = "H3RAU56A8E"
 
-Instance: DePseudonymizeResponseWithStringExample
+Instance: DePseudonymizeResponseWithIdentifierExample
 InstanceOf: Parameters
 Description: "An example of a $de-pseudonymize request response"
 * parameter[+].name = "original"
-* parameter[=].part[0].name = "target"
+* parameter[=].part[0].name = "context"
 * parameter[=].part[=].valueIdentifier.system = "https://sample/psn-system"
 * parameter[=].part[=].valueIdentifier.value = "Transfer1"
 * parameter[=].part[+].name = "value"

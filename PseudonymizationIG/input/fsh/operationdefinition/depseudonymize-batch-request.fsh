@@ -20,15 +20,17 @@ Usage: #example
 Instance: 79378cb8-8f58-3333-a5e8-60ac2755b674
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "Transfer1"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "Transfer1"
 * parameter[+].name = "pseudonym"
-* parameter[=].valueString = "H3RAU56A8E"
+* parameter[=].valueIdentifier.system = "https://example.com/pseudonym-ids"
+* parameter[=].valueIdentifier.value = "H3RAU56A8E"
 
 Instance: 628ddc36-c8e4-3333-bac7-2599677a9e7d
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
+* parameter[+].name = "context"
 * parameter[=].valueIdentifier.system = "https://sample/psn-system"
 * parameter[=].valueIdentifier.value = "Transfer1"
 * parameter[+].name = "pseudonym"
@@ -38,7 +40,9 @@ Usage: #inline
 Instance: 46fd24a0-04d4-3333-82ee-8a9cad2b6a86
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "unknown-domain"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "unknown-domain"
 * parameter[+].name = "pseudonym"
-* parameter[=].valueString = "H3RAU56A8E"
+* parameter[=].valueIdentifier.system = "https://example.com/pseudonym-ids"
+* parameter[=].valueIdentifier.value = "H3RAU56A8E"

@@ -20,16 +20,19 @@ Usage: #example
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-1
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "pseudonym-domain"
 * parameter[+].name = "original"
-* parameter[=].valueString = "an-original-value-1"
+* parameter[=].valueIdentifier.system = "https://example.com/original-ids"
+* parameter[=].valueIdentifier.value = "an-original-value-1"
 
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-2
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "pseudonym-domain"
 * parameter[+].name = "original"
 * parameter[=].valueIdentifier.system = "https://example.com/original-ids"
 * parameter[=].valueIdentifier.value = "an-original-identifier-value"
@@ -37,7 +40,9 @@ Usage: #inline
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-request-3
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain-that-doesn't-exist"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "pseudonym-domain-that-doesn't-exist"
 * parameter[+].name = "original"
-* parameter[=].valueString = "an-original-value-1"
+* parameter[=].valueIdentifier.system = "https://example.com/original-ids"
+* parameter[=].valueIdentifier.value = "an-original-value-1"
