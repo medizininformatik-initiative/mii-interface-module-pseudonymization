@@ -69,3 +69,5 @@ Weitere Fehlerarten sind möglich, z.B. 500 zur Meldung „unerwarteter Ereignis
 Das Konzeptdokument verwendet einheitlich den Begriff „Personenpseudonym“, da das Datenschutzkonzept der MII explizit von einem dauerhaften Pseudonym je Standort und Person spricht. Die Erweiterung des Pseudonym-Begriffs auf beliebige Identifier ist für künftige Versionen des Konzeptdokumentes angedacht und wird in einer späteren Version des Schnittstellenkonzeptes (Version 2.0) berücksichtigt werden.
 
 Ebenso ist eine Erweiterung des Konzeptes um die konkreten Szenarien 2 und 4 grundsätzlich denkbar.
+
+Das `system`-Element der als `Identifier` übergebenen Parameter (`context`, `original`, `pseudonym`) ist optional. Perspektivisch ist denkbar, dass dieses künftig zur Referenzierung einer `NamingSystem`-Ressource genutzt wird, die den jeweiligen Pseudonymisierungs-Context repräsentiert.
