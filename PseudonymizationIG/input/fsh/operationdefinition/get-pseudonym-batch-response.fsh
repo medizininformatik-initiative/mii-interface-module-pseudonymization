@@ -17,18 +17,18 @@ Usage: #example
 Instance: 0ee863aa-aaaa-4d5f-a70f-8f5edc7981d9
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.value = "pseudonym-domain"
 * parameter[+].name = "original"
-* parameter[=].valueString = "an-original-value-1"
+* parameter[=].valueIdentifier.value = "an-original-value-1"
 * parameter[+].name = "pseudonym"
-* parameter[=].valueString = "pseudonym-for-original-value-1"
+* parameter[=].valueIdentifier.value = "pseudonym-for-original-value-1"
 
 
 Instance: c672a2ae-aaaa-4723-9706-524994fdd07a
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
+* parameter[+].name = "context"
 * parameter[=].valueIdentifier.system = "https://sample/psn-system"
 * parameter[=].valueIdentifier.value = "pseudonym-domain"
 * parameter[+].name = "original"
@@ -43,5 +43,5 @@ InstanceOf: OperationOutcome
 Usage: #inline
 * issue.severity = #error
 * issue.code = #not-found
-* issue.diagnostics = "The given target 'pseudonym-domain-that-doesn't-exist' was not found."
-* issue.expression = "Parameters.parameter.where(name='target')"
+* issue.diagnostics = "The given context 'pseudonym-domain-that-doesn't-exist' was not found."
+* issue.expression = "Parameters.parameter.where(name='context')"

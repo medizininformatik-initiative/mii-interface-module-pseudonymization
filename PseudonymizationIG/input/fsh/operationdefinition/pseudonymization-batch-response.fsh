@@ -17,18 +17,21 @@ Usage: #example
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-response-1
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
-* parameter[=].valueString = "pseudonym-domain"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "pseudonym-domain"
 * parameter[+].name = "original"
-* parameter[=].valueString = "an-original-value-1"
+* parameter[=].valueIdentifier.system = "https://example.com/original-ids"
+* parameter[=].valueIdentifier.value = "an-original-value-1"
 * parameter[+].name = "pseudonym"
-* parameter[=].valueString = "pseudonym-for-original-value-1"
+* parameter[=].valueIdentifier.system = "https://example.com/pseudonym-ids"
+* parameter[=].valueIdentifier.value = "pseudonym-for-original-value-1"
 
 
 Instance: Inline-Instance-for-pseudonymize-example-bundle-batch-response-2
 InstanceOf: Parameters
 Usage: #inline
-* parameter[+].name = "target"
+* parameter[+].name = "context"
 * parameter[=].valueIdentifier.system = "https://sample/psn-system"
 * parameter[=].valueIdentifier.value = "pseudonym-domain"
 * parameter[+].name = "original"
@@ -43,5 +46,5 @@ InstanceOf: OperationOutcome
 Usage: #inline
 * issue.severity = #error
 * issue.code = #not-found
-* issue.diagnostics = "The given pseudonymization target 'pseudonym-domain-that-doesn't-exist' was not found."
-* issue.expression = "Parameters.parameter.where(name='target')"
+* issue.diagnostics = "The given pseudonymization context 'pseudonym-domain-that-doesn't-exist' was not found."
+* issue.expression = "Parameters.parameter.where(name='context')"

@@ -16,7 +16,7 @@ InstanceOf: Parameters
 * parameter[+]
   * name = "pseudonym"
   * part[+]
-    * name = "target"
+    * name = "context"
     * valueIdentifier
       * system = "https://sample/multi-psn-capable-system"
       * value = "MultiPsnDomain"
@@ -33,7 +33,7 @@ InstanceOf: Parameters
 * parameter[+]
   * name = "pseudonym"
   * part[+]
-    * name = "target"
+    * name = "context"
     * valueIdentifier
       * system = "https://sample/multi-psn-capable-system"
       * value = "MultiPsnDomain"
@@ -50,7 +50,7 @@ InstanceOf: Parameters
 * parameter[+]
   * name = "pseudonym"
   * part[+]
-    * name = "target"
+    * name = "context"
     * valueIdentifier
       * system = "https://sample/multi-psn-capable-system"
       * value = "MultiPsnDomain"
@@ -70,5 +70,5 @@ InstanceOf: OperationOutcome
 Usage: #inline
 * issue.severity = #error
 * issue.code = #not-found
-* issue.diagnostics = "The given pseudonymization target 'pseudonym-domain-that-doesn't-exist' was not found."
-* issue.expression = "Parameters.parameter.where(name='target')"
+* issue.diagnostics = "The given pseudonymization context 'pseudonym-domain-that-doesn't-exist' was not found."
+* issue.expression = "Parameters.parameter.where(name='context')"

@@ -16,31 +16,19 @@ Description: "Deletes a single pseudonym-entry (identified by the original value
 * instance = false
 
 * parameter[+]
-  * name = #target
+  * name = #context
   * use = #in
   * min = 1
   * max = "1"
   * documentation = "Specification of the pseudonymisation context within which the specified original values are deleted."
-  * type = #Element
-    * extension[0]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "string"
-    * extension[+]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "Identifier"
+  * type = #Identifier
 * parameter[+]
   * name = #original
   * use = #in
   * min = 1
   * max = "1"
   * documentation = "Specification of an original value for which a deletion is to be performed in the specified pseudonymisation context."
-  * type = #Element
-    * extension[0]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "string"
-    * extension[+]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "Identifier"
+  * type = #Identifier
 
 * parameter[+]
   * name = #successStatus
@@ -52,12 +40,12 @@ Description: "Deletes a single pseudonym-entry (identified by the original value
 
 Instance: Parameters-DeletePseudonym-request-example-1
 InstanceOf: Parameters
-Description: "An example of a $delete-pseudonym request using two original values of type string"
+Description: "An example of a $delete-pseudonym request using two original values of type identifier"
 Usage: #example
-* parameter[+].name = "target"
-* parameter[=].valueString = "Transfer1"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.value = "Transfer1"
 * parameter[+].name = "original"
-* parameter[=].valueString = "D1CL0CAL2"
+* parameter[=].valueIdentifier.value = "D1CL0CAL2"
 
 Instance: OperationOutcome-DeletePseudonym-response-example-1
 InstanceOf: OperationOutcome

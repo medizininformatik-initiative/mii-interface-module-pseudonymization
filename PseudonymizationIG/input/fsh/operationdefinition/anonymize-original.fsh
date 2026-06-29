@@ -16,31 +16,19 @@ Usage: #definition
 * instance = false
 
 * parameter[+]
-  * name = #target
+  * name = #context
   * use = #in
   * min = 1
   * max = "1"
   * documentation = "Specification of the pseudonymisation context within which anonymisation is to be  performed for the specified original value."
-  * type = #Element
-    * extension[0]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "string"
-    * extension[+]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "Identifier"
+  * type = #Identifier
 * parameter[+]
   * name = #original
   * use = #in
   * min = 1
   * max = "1"
   * documentation = "Original value for which anonymisation is to be performed in the specified pseudonymisation context."
-  * type = #Element
-    * extension[0]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "string"
-    * extension[+]
-      * url = "http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type"
-      * valueUri = "Identifier"
+  * type = #Identifier
 
 * parameter[+]
   * name = #successStatus
@@ -52,12 +40,14 @@ Usage: #definition
 
 Instance: Parameters-AnonymizeOriginal-request-example-1
 InstanceOf: Parameters
-Description: "An example of a $anonymize-original request using a original value of type string"
+Description: "An example of a $anonymize-original request using a original value of type identifier"
 Usage: #example
-* parameter[+].name = "target"
-* parameter[=].valueString = "Transfer1"
+* parameter[+].name = "context"
+* parameter[=].valueIdentifier.system = "https://sample/psn-system"
+* parameter[=].valueIdentifier.value = "Transfer1"
 * parameter[+].name = "original"
-* parameter[=].valueString = "D1CL0CAL1"
+* parameter[=].valueIdentifier.system = "https://example.com/original-ids"
+* parameter[=].valueIdentifier.value = "D1CL0CAL1"
 
 Instance: OperationOutcome-AnonymizeOriginal-response-example-1
 InstanceOf: OperationOutcome
