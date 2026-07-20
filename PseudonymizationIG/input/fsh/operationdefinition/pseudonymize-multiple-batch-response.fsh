@@ -1,18 +1,19 @@
-Instance: pseudonymize-multiple-example-bundle-batch-response
+Instance: psn-multi-example-bundle-batch-response
 InstanceOf: Bundle
 Description: "An example response bundle for the pseudonymize batch request in a multi psn domain using opdef $pseudonymize-multiple"
 Usage: #example
-* meta.profile = "https://fhir.example.com/StructureDefinition/pseudonymize-multiple-batch-response"
+* meta.profile = "https://fhir.example.com/StructureDefinition/psn-multi-batch-response"
 * type = #batch-response
 * entry[0].fullUrl = "urn:uuid:0ee863aa-1fe7-4d5f-6666-8f5edc7981d9"
-* entry[=].resource = 0ee863aa-1fe7-4d5f-6666-8f5edc7981d9
+* entry[=].resource = Inline-Instance-for-psn-multi-example-bundle-batch-response-1
 * entry[=].response.status = "201 Created"
 * entry[+].fullUrl = "urn:uuid:c672a2ae-4d75-4723-6666-524994fdd07a"
-* entry[=].resource = c672a2ae-4d75-4723-6666-524994fdd07a
+* entry[=].resource = Inline-Instance-for-psn-multi-example-bundle-batch-response-2
 * entry[=].response.status = "404 Not Found"
 
-Instance: 0ee863aa-1fe7-4d5f-6666-8f5edc7981d9
+Instance: Inline-Instance-for-psn-multi-example-bundle-batch-response-1
 InstanceOf: Parameters
+Usage: #inline
 * parameter[+]
   * name = "pseudonym"
   * part[+]
@@ -65,7 +66,7 @@ InstanceOf: Parameters
       * system = "https://sample/multi-psn-capable-system"
       * value = "53KUNDA3RP5N3"
 
-Instance: c672a2ae-4d75-4723-6666-524994fdd07a
+Instance: Inline-Instance-for-psn-multi-example-bundle-batch-response-2
 InstanceOf: OperationOutcome
 Usage: #inline
 * issue.severity = #error
