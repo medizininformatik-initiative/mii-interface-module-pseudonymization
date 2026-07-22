@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.1.0](https://github.com/medizininformatik-initiative/mii-interface-module-pseudonymization/compare/v2026.1.0-ballot.1...v2026.1.0) (2026-07-22)
+
+
+### Miscellaneous Chores
+
+* prepare release v2026.1.0 ([#23](https://github.com/medizininformatik-initiative/mii-interface-module-pseudonymization/issues/23)) ([9ddc66a](https://github.com/medizininformatik-initiative/mii-interface-module-pseudonymization/commit/9ddc66a7fc7d73e1763e14fa9c30bc1957e9afb7))
+
 ## [2026.1.0-ballot.1](https://github.com/medizininformatik-initiative/mii-interface-module-pseudonymization/compare/v2026.0.0-ballot.1...v2026.1.0-ballot.1) (2026-06-29)
 
 
