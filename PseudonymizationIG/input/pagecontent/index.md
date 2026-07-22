@@ -1,10 +1,12 @@
 ![](https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png){: align="right" width="135px"}
+
 # Implementation Guide für Schnittstelle zur Pseudonymisierung in der MII
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation einer Pseudonymisierungs-Schnittstelle.
 Diese wurde primär mit Fokus auf Anwendung in der MII entwickelt, ist gleichzeitig aber darüber hinaus anwendbar.
 
-### Inhaltsverzeichnis
+## Inhaltsverzeichnis
+
 - [Hintergrund](Hintergrund.html)
 - [Use Cases](UseCases.html)
 - [Schnittstelle und Beispiele](Funktionen.html)
@@ -19,11 +21,13 @@ Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative im Jahr 2024 auf
 Inhaltlich verantwortlich für die hier dargestellten Inhalte ist die MII Taskforce 'Übergreifende Schnittstellen'.
 
 Die Konzeptarbeit erfolgte durch:
+
 - Martin Bialke
 - Christian Gulden
 - Johanna Eicher
 
 sowie unter Mitarbeit von
+
 - Christopher Hampf
 - Peter Pallaoro
 - Helmut Spengler
@@ -32,12 +36,13 @@ sowie unter Mitarbeit von
 - Julian Gründner
 
 Die IG-Erstellung erfolgte durch:
+
 - Martin Bialke
 - Christian Gulden
 
 Kommentare können (nach kostenloser Anmeldung) in GitHub als Issue erstellt werden.
 
-- GitHub: https://github.com/medizininformatik-initiative/mii-interface-module-pseudonymization/issues
+- GitHub: <https://github.com/medizininformatik-initiative/mii-interface-module-pseudonymization/issues>
 
 ### Copyright-Hinweis, Nutzungshinweise
 
