@@ -4,14 +4,6 @@
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation einer Pseudonymisierungs-Schnittstelle.
 Diese wurde primär mit Fokus auf Anwendung in der MII entwickelt, ist gleichzeitig aber darüber hinaus anwendbar.
 
-
-|Veröffentlichung|Status|
---|--
-Datum|2026-07-20
-Version|2026.0.0-ballot.1
-Status|ballot
-Realm|DE
-
 ### Inhaltsverzeichnis
 - [Hintergrund](Hintergrund.html)
 - [Use Cases](UseCases.html)
