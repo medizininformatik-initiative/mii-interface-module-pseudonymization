@@ -6,6 +6,6 @@
   "description": "My FHIR Template",
   "base": "hl7.fhir.template",
   "dependencies": {
-  "hl7.fhir.template": "0.0.5"
+  "hl7.fhir.template": "0.10.1"
   }
  }
